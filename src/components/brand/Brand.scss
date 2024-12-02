@@ -1,0 +1,20 @@
+//Import folder Styles-Globals and assign alias.
+@use '../../styles/' as *;
+
+// ===Styling Mainlogo E-Commerce====
+.beerclk-nav__logo-main {
+	//Aligning main LogoItems : logo & span E-Commerce
+	@include align-flexcontainer ( column, center );  
+  margin:10px;
+		// ===Styling logo E-Commerce====
+		& img {
+			@include style-img( $width: 5rem, $height: auto, $border-radius: 0, $object-fit: cover);
+		};
+
+		// ===Styling Name E-Commerce===
+		& span {
+			@include style-font( $color: $white-dark, $font: 'Comic Sans MS', $fallback: 'sans-serif', $size: 22px, $weight: 500  );
+      		margin:0px;
+		};
+};
+

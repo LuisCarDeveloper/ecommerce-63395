@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<svg width="480" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" xml:space="preserve">
+ <desc>Created with Fabric.js 3.6.6</desc>
+ <defs>
+  <filter id="svg_50_blur">
+   <feGaussianBlur in="SourceGraphic" stdDeviation="1.5"/>
+  </filter>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <circle cx="242.5" cy="226.5" fill="#ffff00" filter="url(#svg_50_blur)" id="svg_50" r="209.91" stroke="#ffffff" stroke-width="31"/>
+  <g id="svg_1" transform="matrix(1 0 0 1 23.58 146.04)">
+   <line fill="rgb(0,0,0)" fill-rule="nonzero" id="svg_2" stroke="#191919" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="5" x1="14" x2="14" y1="-12" y2="-12"/>
+  </g>
+  <g id="svg_49">
+   <g id="svg_9" transform="matrix(1.68924 0 0 1.34386 792.772 412.818)">
+    <line fill="rgb(0,0,0)" fill-rule="nonzero" id="svg_10" stroke="#005e2d" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="10" x1="-427.66" x2="-427.66" y1="-225.54" y2="-225.54"/>
+   </g>
+   <g id="svg_11" transform="matrix(1.68924 0 0 1.34386 792.957 418.785)">
+    <line fill="rgb(0,0,0)" fill-rule="nonzero" id="svg_12" stroke="#005e2d" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="10" x1="-427.66" x2="-427.66" y1="-225.54" y2="-225.54"/>
+   </g>
+   <g id="svg_13" transform="matrix(1.68924 0 0 1.34386 810.221 433.729)">
+    <line fill="rgb(0,0,0)" fill-rule="nonzero" id="svg_14" stroke="#005e2d" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="10" x1="-427.66" x2="-427.66" y1="-225.54" y2="-225.54"/>
+   </g>
+   <g id="svg_15" transform="matrix(1.68924 0 0 1.34386 811.724 433.729)">
+    <line fill="rgb(0,0,0)" fill-rule="nonzero" id="svg_16" stroke="#005e2d" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="10" x1="-427.66" x2="-427.66" y1="-225.54" y2="-225.54"/>
+   </g>
+   <g id="svg_17" transform="matrix(1.68924 0 0 1.34386 811.724 433.729)">
+    <line fill="rgb(0,0,0)" fill-rule="nonzero" id="svg_18" stroke="#005e2d" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="10" x1="-427.66" x2="-427.66" y1="-225.54" y2="-225.54"/>
+   </g>
+   <g id="svg_19" transform="matrix(1.68924 0 0 1.34386 811.724 433.729)">
+    <line fill="rgb(0,0,0)" fill-rule="nonzero" id="svg_20" stroke="#005e2d" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="10" x1="-427.66" x2="-427.66" y1="-225.54" y2="-225.54"/>
+   </g>
+   <g id="svg_21" transform="matrix(1.68924 0 0 1.34386 807.248 433.729)">
+    <line fill="rgb(0,0,0)" fill-rule="nonzero" id="svg_22" stroke="#005e2d" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="10" x1="-427.66" x2="-427.66" y1="-225.54" y2="-225.54"/>
+   </g>
+   <g id="svg_23" transform="matrix(1.68924 0 0 1.34386 908.231 501.351)">
+    <line fill="rgb(0,0,0)" fill-rule="nonzero" id="svg_24" stroke="#005e2d" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="10" x1="-421.74" x2="-421.74" y1="-215.87" y2="-215.87"/>
+   </g>
+   <g id="svg_25" transform="matrix(1.68924 0 0 1.34386 809.63 529.868)">
+    <line fill="rgb(0,0,0)" fill-rule="nonzero" id="svg_26" stroke="#005e2d" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="10" x1="-427.66" x2="-427.66" y1="-225.54" y2="-225.54"/>
+   </g>
+   <g id="svg_27" transform="matrix(0.56533 0.751822 -0.938335 0.807802 893.986 781.977)">
+    <polygon fill="#005e2d" fill-rule="nonzero" id="svg_28" points="-894.1392335891724,159.29912662506104 -844.1392335891724,244.29915714263916 -944.1392335891724,244.29915714263916 " stroke="#005e2d" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="10"/>
+   </g>
+   <g id="svg_29" transform="matrix(0 -0.940702 -1.25004 0 1046.98 528.444)">
+    <path d="m312.21,626.91l0,0c0,-32 25.95,-57.95 57.95,-57.95c32.01,0 57.96,25.95 57.96,57.95l-28.98,0c0,-16 -12.97,-28.97 -28.98,-28.97c-16,0 -28.97,12.97 -28.97,28.97l-28.98,0z" fill="none" fill-rule="nonzero" id="svg_30" stroke="#005e2d" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="10" transform="translate(-57.95 -28.98)"/>
+   </g>
+   <g id="svg_31" transform="matrix(0.42801 0 0 0.430036 748.874 371.561)">
+    <circle cx="-1321.16" cy="-693.18" fill="#005e2d" fill-rule="nonzero" id="svg_32" r="40" stroke="#005e2d" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="10"/>
+   </g>
+   <g id="svg_33" transform="matrix(0.170564 0 0 0.18814 651.653 373.726)">
+    <circle cx="-2961.21" cy="-1535.51" fill="#005e2d" fill-rule="nonzero" id="svg_34" r="40" stroke="#005e2d" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="10"/>
+   </g>
+   <g id="svg_35" transform="matrix(0.167306 0 0 0.174701 758.652 342.574)">
+    <circle cx="-3262.23" cy="-1691.37" fill="#005e2d" fill-rule="nonzero" id="svg_36" r="40" stroke="#005e2d" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="10"/>
+   </g>
+   <g id="svg_37" transform="matrix(1.92574 0 0 -0.807217 887.335 352.912)">
+    <line fill="none" fill-rule="nonzero" id="svg_38" stroke="#005e2d" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="10" x1="-370.16" x2="-369.72" y1="149.17" y2="236.28"/>
+   </g>
+   <g id="svg_39" transform="matrix(1.68924 0 0 1.34386 800.221 618.523)">
+    <line fill="rgb(0,0,0)" fill-rule="nonzero" id="svg_40" stroke="#005e2d" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="6" x1="-397.85" x2="-413.95" y1="-240.7" y2="-227.04"/>
+   </g>
+   <g id="svg_41" transform="matrix(1.68924 0 0 1.34386 834.005 657.858)">
+    <line fill="rgb(0,0,0)" fill-rule="nonzero" id="svg_42" stroke="#005e2d" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="6" x1="-397.85" x2="-413.95" y1="-240.7" y2="-227.04"/>
+   </g>
+   <g id="svg_43" transform="matrix(3.12509 0 0 2.48614 804.714 646.125)">
+    <line fill="rgb(0,0,0)" fill-rule="nonzero" id="svg_44" stroke="#005e2d" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="6" x1="-211.36" x2="-227.46" y1="-133.25" y2="-119.59"/>
+   </g>
+   <g fill-opacity="0" id="svg_45" transform="matrix(1.50343 0 0 1.22291 961.054 427.48)">
+    <path d="m-453.85,-236.4l84.38,0l0,0c11.05,0 20.01,9.28 20.01,20.73c0,11.45 -8.96,20.74 -20.01,20.74l-84.38,0l0,0c-11.05,0 -20.01,-9.29 -20.01,-20.74c0,-11.45 8.96,-20.73 20.01,-20.73z" fill="#000000" fill-rule="nonzero" id="svg_46" stroke="#005e2d" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="10" transform="translate(-62.2 -20.73)"/>
+   </g>
+   <g id="svg_47" transform="matrix(1.68924 0 0 1.83934 980.142 720.531)">
+    <path d="m-388.49,-234.75q0.46,29.76 0.46,29.76l-70.23,-0.46" fill="none" fill-rule="nonzero" id="svg_48" stroke="#005e2d" stroke-dashoffset="0" stroke-linejoin="round" stroke-miterlimit="4" stroke-width="10"/>
+   </g>
+  </g>
+  <rect fill="none" height="0" id="svg_60" stroke="#191919" width="0" x="-218.5" y="222"/>
+ </g>
+</svg>

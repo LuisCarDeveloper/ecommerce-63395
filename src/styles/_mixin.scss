@@ -1,0 +1,56 @@
+@use './variables.scss' as *;
+
+//=========Mixin Alignation Flex Items===========
+
+@mixin align-flexcontainer ( $direc: row , $justCont: center ) {
+    display: flex;
+    flex-direction: $direc;
+    justify-content: $justCont;
+    align-items: center;
+    overflow:hidden;
+
+};
+
+//=========Mixin Styling Fonts Span===========
+ @mixin style-font ( $color: $white-dark, $font: 'Lato', $fallback: 'Arial, sans-serif', $size: 16px ,$weight: 300 ){
+    color: $color;
+    font-family: $font, $fallback ;
+    font-size: $size;
+    font-weight: $weight;
+    margin: 4px;
+    text-align: center;
+ };
+
+ //=========Mixin Styling Images ===========
+ @mixin style-img ( $width: auto, $height: auto, $border-radius: 0, $object-fit: cover, $box-shadow: none ) {
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+    object-fit: $object-fit;
+    display: block; // img as Block
+    max-width: 100%; // Ensure img inside container
+  };
+
+   //=========Mixin Styling List with ref ===========
+
+   @mixin style-uListRef ( $style:none, $color:$white-light ) {
+      list-style-type: $style;
+      //Styling item List
+      & li {
+         //Styling ref items
+         & a {
+            text-decoration: none;
+            color: $color;
+         };
+      };
+   };
+
+    //=========Mixin Styling Border in Div ===========
+
+    @mixin style-border ( $line:0.5px, $style:solid, $color-bord: $gray-dark, $radius:3px ) {
+      border: $line $style $color-bord;
+      border-radius: $color-bord;
+      box-shadow: $line $line #{2*$line} $line $color-bord
+    };
+
+

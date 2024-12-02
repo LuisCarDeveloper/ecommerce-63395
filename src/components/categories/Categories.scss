@@ -1,0 +1,23 @@
+//Import folder Styles-Globals and assign alias.
+@use '../../styles/' as *;
+
+//=== Styling Categories-Bar === 
+.beerclk-nav__menu-categories{
+
+	//=== Styling Categories-Bar-Container === 
+    & ul {
+		//Align ItemList Categories
+      @include align-flexcontainer(row,space-evenly);
+      gap:10px;
+		  padding: 0;
+		//Styling ItemList Categories
+      @include style-uListRef($style:none, $color:$white-ligth);
+      @include style-font($color:$white-dark, $font:'Poppins', $fallback:'Arial, sans-serif', $size: 17px , $weight: 400);
+		
+    //===Styling Items Categories===		
+		& li {
+      //Align Item 
+			text-align: start;
+		};				
+	};
+};

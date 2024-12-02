@@ -1,0 +1,40 @@
+//Import folder Styles-Globals and assign alias.
+@use '../../styles/' as *;
+
+//===Styling  Maincontainers Header Items=== 
+.beerclk-nav {
+  //Aligning  Maincontainers Header Items 
+  @include align-flexcontainer ( $direc:row, $justCont:space-evenly );  
+  //Positioning MainContainer Header
+  position: relative;
+  //Styling MainContainer Header
+  width: 100%;
+  background-color: $lime-principal;
+  @include style-border($color-bord:$lime-principal);
+
+  //===Styling LeftContainer Header===
+  & .container_left {
+    //Alignining LeftContainer Items 
+    @include align-flexcontainer ( $direc:row, $justCont:center );
+    //Styling LeftContainer
+  };
+
+  //===Styling MiddleContainer Header===
+  & .container_middle { 
+    //Alignining MiddleContainer Items 
+    @include align-flexcontainer ( $direc:row, $justCont:space-evenly );
+    gap: 15px;
+    //Styling LeftContainer
+    min-width:50%;
+  };
+
+  & .container_right {
+    //Alignining MiddleContainer Items 
+    @include align-flexcontainer ( $direc:row, $justCont:space-evenly );
+    overflow: visible;
+    //Styling LeftContainer
+  };
+  
+};
+    
+

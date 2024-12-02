@@ -1,0 +1,80 @@
+
+// ============Lato Typography============================
+
+//=============Lato-Regular======================
+@font-face {
+  font-family: 'Lato';
+  src: url('../assets/fonts/lato/Lato-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+//=============Lato-Italic======================
+@font-face {
+  font-family: 'Lato';
+  src: url('../assets/fonts/lato/Lato-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+//=============Lato-Bold======================
+@font-face {
+  font-family: 'Lato';
+  src: url('../assets/fonts/lato/Lato-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+//=============Lato-Extra_Bold====================== 
+@font-face {
+  font-family: 'Lato';
+  src: url('../assets/fonts/lato/Lato-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+// ============Poppins Typography============================
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../src/assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400; // Regular
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../src/assets/fonts/poppins/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700; // Bold
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../src/assets/fonts/poppins/Poppins-Italic.ttf') format('truetype');
+  font-weight: 400; // Regular
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../src/assets/fonts/poppins/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500; // Medium
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../src/assets/fonts/poppins/Poppins-Black.ttf') format('truetype');
+  font-weight: 900; // Black
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../src/assets/fonts/poppins/Poppins-Thin.ttf') format('truetype');
+  font-weight: 100; // Thin
+  font-style: normal;
+}

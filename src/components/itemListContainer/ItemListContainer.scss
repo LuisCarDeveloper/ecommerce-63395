@@ -1,0 +1,34 @@
+//Import folder Styles-Globals and assign alias.
+@use '../../styles/' as *;
+@use '../../styles/typography' as *;
+
+//===Styling ListContainer ===
+.beerclk-nav__itemList-Container {
+    //Styling ListContainer
+    background-color:$white-ligth;
+    padding: 150px ;
+    //Styling Main-message
+    @include style-font ( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 50px ,$weight: 400 );
+    
+    //===Styling Secondary-message===
+    & span:nth-child(2){
+        display:block;
+        font-size:30px;
+    };
+    //===Styling Construction-Logos Container===
+    & .construction-logos{
+        //Align logos
+        @include align-flexcontainer ( $direc: row , $justCont: center );
+        align-items: baseline;
+        gap:30px;
+        margin:100px 0px;
+        //===Styling first logo : Crane===
+        > :nth-child(1) {
+            @include style-font ( $color: $gray-dark, $size: 180px ,$weight: 300 );
+        };
+        //===Styling second logo : Building.===
+        > :nth-child(2) {
+            @include style-font ( $color: $gray-dark, $size: 100px ,$weight: 300 );
+        };        
+    };
+};

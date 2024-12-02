@@ -1,0 +1,43 @@
+//Import folder Styles-Globals and assign alias.
+@use '../../styles/' as *;
+
+//===Styling InputContainer searcher===
+.beerclk-nav__input-search {
+	//Aligning Items : input & button searcher
+	@include align-flexcontainer ( $direc:row, $justCont:center );
+	//Styling InputContainer searcher
+	width:100%;
+	//===Styling input searcher
+	& input {
+		//Styling input searcher
+		min-width:80%;
+		height: 2.5rem;
+		border-radius: 6px;
+		margin:0;	
+
+		//===Styling placeholder input searcher
+		::placeholder{
+			color:$gray-dark;
+			font-size: large;
+		};
+	};
+
+	//===Styling button searcher
+	& button {
+		//Allign Icon button searcher
+		@include align-flexcontainer ( $direc:row, $justCont:center );
+		margin:0;		
+		//Styling button searcher
+		width:50px;
+		height: 2.6rem;
+		background-color: $gray-dark;
+		border-radius: 6px;
+
+		//===Styling span Icon button searcher
+		& .search-icon {
+			//Styling span Icon button searcher
+			@include style-font ( $white-dark, none , none, 1.5rem , 300 );
+			padding-top: 2.5px;
+		};
+	};
+};

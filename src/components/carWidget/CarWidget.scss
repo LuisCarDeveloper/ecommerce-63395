@@ -1,0 +1,31 @@
+//Import folder Styles-Globals and assign alias.
+@use '../../styles/' as *;
+
+.beerclk-nav__cart {
+  position: relative;
+	
+	& .cart-logo{	
+		font-size:50px;
+		color:$white-ligth;
+	};
+
+	& .container-cartbadge{
+		position:absolute;
+		bottom:80%;
+		left:80%;
+
+		& .cartbadge-logo{
+			font-size:30px;
+			color:$white-ligth;
+		};
+
+		& .cartbadge-content{
+			background-color: $gray-dark;
+			border-radius:50%;
+			padding: 6px;
+			font-size:10px;
+			font-weight: 700;
+			color: $white-ligth;
+		};
+	};
+};

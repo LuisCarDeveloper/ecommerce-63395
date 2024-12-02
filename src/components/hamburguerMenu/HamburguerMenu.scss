@@ -1,0 +1,37 @@
+//Import folder Styles-Globals and assign alias.
+@use '../../styles/' as *;
+
+//=== Styling  logo-Menu === 
+.beerclk-nav__logo-menu {
+  //Aligning  Maincontainers-Header Items: nav & span
+  @include align-flexcontainer( $direc: row , $justCont: center); 
+  margin:0 10px;
+  overflow: visible;
+
+  //===Styling span Maincontainers-Header===
+  & span {
+    //Positioning span Maincontainers-Header
+    position: relative;
+    //Styling span Maincontainers-Header
+    @include style-font($color: $white-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 28px ,$weight: 500);
+    margin: 35px;
+
+
+    //===Styling after span Maincontainers-Header:vertical bar===
+    &::after {
+      content: '';
+      //Positioning after span 
+      position: absolute;
+      left: 140%;
+      top:  -10%;
+      //Styling after span 
+      width: 2px;
+      height: 55px;
+      background-color: $white-ligth;
+    };
+  };
+  //===Styling nav-Menu ===
+};
+
+
+
