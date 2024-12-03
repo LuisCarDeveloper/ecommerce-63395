@@ -8,7 +8,7 @@ export default function App() {
   return(
     <>
       <NavBar/> 
-      <ItemListContainer/>
+      <ItemListContainer greeting= 'Bienvenido a "Beer Click ", su tienda Online de bebidas.' mainMssge= 'Estamos construyendo la plataforma de compra, gracias por su paciencia....!!!'/>
     </> 
     );
 };
