@@ -1,0 +1,19 @@
+//Import folder Styles-Globals and assign alias.
+@use '../../styles/' as *;
+
+.loader {
+    width:100%;
+    min-width: 800px;
+    height: 100vh;
+    padding:30vh ;
+    text-align: center;
+    align-items: center;
+
+    .loaderText{
+        @include style-font ( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 32px ,$weight: 500 )
+        }
+    .loaderLogo{
+        margin:50px 0px;
+
+    }    
+    }

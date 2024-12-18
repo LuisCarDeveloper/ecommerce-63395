@@ -1,9 +1,16 @@
 import ItemListContainerPresentation from './ItemListContainer.Presentation';
+import products from "../../mocks/products";
+import useGetProduct from '../../hook/useGetProduct';
+import Loader from '../loader/Loader';
 import './ItemListContainer.scss'
 
-export default function ItemListContainer ({greeting, mainMssge}) {
-  
+export default function ItemListContainer () {
+
+    const {productList, error, loading} = useGetProduct(products)
+    
     return (
-          <ItemListContainerPresentation className = 'beerclk-nav__itemList-Container' greeting= {greeting} mainMssge={mainMssge}/>
+          loading
+          ?<Loader/>:
+          <ItemListContainerPresentation productList = { productList } />
         );
 };

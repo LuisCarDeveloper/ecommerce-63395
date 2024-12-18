@@ -5,7 +5,7 @@
 .beerclk-nav__logo-main {
 	//Aligning main LogoItems : logo & span E-Commerce
 	@include align-flexcontainer ( column, center );  
-  margin:10px;
+  		margin:10px;
 		// ===Styling logo E-Commerce====
 		& img {
 			@include style-img( $width: 5rem, $height: auto, $border-radius: 0, $object-fit: cover);

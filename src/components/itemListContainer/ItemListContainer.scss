@@ -2,33 +2,26 @@
 @use '../../styles/' as *;
 @use '../../styles/typography' as *;
 
-//===Styling ListContainer ===
-.beerclk-nav__itemList-Container {
-    //Styling ListContainer
-    background-color:$white-ligth;
-    padding: 150px ;
-    //Styling Main-message
-    @include style-font ( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 50px ,$weight: 400 );
-    
-    //===Styling Secondary-message===
-    & span:nth-child(2){
-        display:block;
-        font-size:30px;
-    };
-    //===Styling Construction-Logos Container===
-    & .construction-logos{
-        //Align logos
-        @include align-flexcontainer ( $direc: row , $justCont: center );
-        align-items: baseline;
-        gap:30px;
-        margin:100px 0px;
-        //===Styling first logo : Crane===
-        > :nth-child(1) {
-            @include style-font ( $color: $gray-dark, $size: 180px ,$weight: 300 );
-        };
-        //===Styling second logo : Building.===
-        > :nth-child(2) {
-            @include style-font ( $color: $gray-dark, $size: 100px ,$weight: 300 );
-        };        
-    };
-};
+.containerFilter{
+    width:50%;
+    margin:30px auto;
+    padding: 40px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));   
+    gap:40px;
+
+}
+
+.filteredProducts{
+    @include style-font( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 16px ,$weight: 300 );
+    @include style-border ( $line:0.5px, $style:solid, $color-bord: $white-dark, $radius:3px );
+    padding:5px;
+    text-decoration: none;
+    & > img{
+        width:100%;
+        padding:15px 0;
+    }
+    .productPrice{
+        @include style-font( $color: red, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 15px ,$weight: 400 );
+    }
+}

@@ -47,9 +47,9 @@
 
     //=========Mixin Styling Border in Div ===========
 
-    @mixin style-border ( $line:0.5px, $style:solid, $color-bord: $gray-dark, $radius:3px ) {
+    @mixin style-border ( $line:0.5px, $style:solid, $color-bord: $gray-dark, $radius:5px ) {
       border: $line $style $color-bord;
-      border-radius: $color-bord;
+      border-radius: $radius;
       box-shadow: $line $line #{2*$line} $line $color-bord
     };
 

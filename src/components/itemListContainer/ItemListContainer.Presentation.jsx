@@ -1,20 +1,26 @@
-import { GiCrane } from "react-icons/gi";
-import { FaBuildingColumns } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import productsAdapter from "../../adapters/productsAdapter";
 
-export default function ItemListContainerPresentation ( { className, greeting, mainMssge } ) {
-  
-    return (
 
-    <div className = { className } >
+export default function ItemListContainerPresentation ( { className, productList} ) {
+  const adaptedProductList= productsAdapter(productList)
 
-          <span>{greeting}</span>
-          <span> {mainMssge}</span>
-          
-          <div className = 'construction-logos'>
-            <GiCrane />
-            <FaBuildingColumns />
-          </div>
+  return (
+      <div className='containerFilter' >
 
-    </div>  
+         { adaptedProductList.map( product => (
+            <Link key = { product.id } to = { `/product/${product.id}` }>
+              <div className ='filteredProducts'>
+                <h5 className='productTitle'>{ product.category } - { product.trade } - { product.type } x { product.pack } { product.unity } { product.volumen } </h5>
+                <p className='productPrice'>Precio: { product.price }</p>
+                <p className='productPrice'>Precio Online: { product.priceOnline }</p>
+                <img src={`/img/${product.id}.webp`} alt={product.id} />
+              </div>
+
+
+            </Link>)) 
+          }
+
+      </div>           
   );
 };
