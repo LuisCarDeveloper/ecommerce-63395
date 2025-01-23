@@ -1,0 +1,16 @@
+@use '../../../styles/' as *;
+@use '../../../styles/typography' as *;
+
+.cartContent{
+    @include style-font ( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 12px ,$weight: 600 );
+    &ul{
+        &li{
+            @include align-flexcontainer ( $direc: row , $justCont: flex-start );
+            
+            display: inline-flex;
+            gap:25px; 
+        }
+           
+    }
+
+}
