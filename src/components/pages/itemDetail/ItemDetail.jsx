@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
 
-import products from "../../mocks/products";
-import useGetProduct from "../../hook/useGetProduct";
-import productsAdapter from "../../adapters/productsAdapter";
-import Loader from "../loader/Loader";
+import products from "../../../mocks/products";
+import useGetProduct from "../../../hook/useGetProduct";
+import productsAdapter from "../../../adapters/productsAdapter";
+import Loader from "../../common/loader/Loader";
 import './ItemDetail.scss'
 
 

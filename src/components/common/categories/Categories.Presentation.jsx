@@ -1,7 +1,7 @@
-import { Categories } from "../../data/data";
+import { Categories } from "../../../data/data";
 import { NavLink } from "react-router-dom";
 
-import { capitalizeFirstLetter } from "../../helpers/capitalizeWord";
+import { capitalizeFirstLetter } from "../../../helpers/capitalizeWord";
 
 export default function CategoriesPresentation ( { className } ) {
   

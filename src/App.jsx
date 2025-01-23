@@ -1,10 +1,10 @@
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
-import {NavBar} from './components/navBar';
+import {NavBar} from './components/common/navBar';
 
-import {Layout} from './components/layout/Layout'
-import {ItemListContainer}  from './components/itemListContainer';
-import {ListContainerFilter} from './components/ListContainerFilter/ListContainerFilter'
-import {ItemDetail} from './components/item/ItemDetail';
+import {Layout} from './components/pages/layout/Layout'
+import {ItemListContainer}  from './components/pages/itemListContainer';
+import { ListContainerFilter } from './components/pages/listContainerFilter/ListContainerFilter';
+import {ItemDetail} from './components/pages/itemDetail/ItemDetail';
 
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css'

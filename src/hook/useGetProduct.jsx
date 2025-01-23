@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { getProductMock } from '../helpers/getProductMock';
+import products from '../mocks/products';
 
-export default function useGetProduct (products) {
+export default function useGetProduct () {
 
   const [ productList, setProductList ] = useState( [] )
   const [ error, setError] = useState()

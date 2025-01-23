@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import productsAdapter from "../../adapters/productsAdapter";
+import productsAdapter from "../../../adapters/productsAdapter";
 
 
 export default function ItemListContainerPresentation ( { className, productList} ) {
@@ -16,8 +16,6 @@ export default function ItemListContainerPresentation ( { className, productList
                 <p className='productPrice'>Precio Online: { product.priceOnline }</p>
                 <img src={`/img/${product.id}.webp`} alt={product.id} />
               </div>
-
-
             </Link>)) 
           }
 

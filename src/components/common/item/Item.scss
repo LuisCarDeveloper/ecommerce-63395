@@ -16,7 +16,6 @@
     @include style-font( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 16px ,$weight: 300 );
     @include style-border ( $line:0.5px, $style:solid, $color-bord: $white-dark, $radius:3px );
     padding:5px;
-    text-decoration: none;
     & > img{
         width:100%;
         padding:15px 0;
@@ -25,5 +24,3 @@
         @include style-font( $color: red, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 15px ,$weight: 400 );
     }
 }
-
-
