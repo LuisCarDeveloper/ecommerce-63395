@@ -1,9 +1,15 @@
 
-function capitalFirstChar(val) {
-    return val?.trim()         // Eliminar espacios al inicio y final
-    .split(' ')    // Separar por espacio
-    .map(v => v[0].toUpperCase() + v.slice(1).toLowerCase())  // Capitalizar la primera letra, minúscula el resto
-    .join(' ');     // Volver a unir las palabras
+export function capitalFirstChar(val) {
+    if (val){
+        return val?.trim()         // Eliminar espacios al inicio y final
+        .split(' ')    // Separar por espacio
+        .map(v => v[0].toUpperCase() + v.slice(1).toLowerCase())  // Capitalizar la primera letra, minúscula el resto
+        .join(' ');
+             // Volver a unir las palabras   
+    } else{
+        return '';
+    }
+
 }
 
 function pluralLastChar(val) {

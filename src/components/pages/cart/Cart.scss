@@ -2,15 +2,71 @@
 @use '../../../styles/typography' as *;
 
 .cartContent{
-    @include style-font ( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 12px ,$weight: 600 );
-    &ul{
-        &li{
-            @include align-flexcontainer ( $direc: row , $justCont: flex-start );
+    @include align-flexcontainer ( $direc: column , $justCont: center );
+    @include style-font ( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 14px ,$weight: 600 );
+    padding: 5px;
+    margin: 30px 15%;
+    & h3{
+        padding:10px;
+        align-self: flex-start;
+        @include style-font ( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 24px ,$weight: 500 );
+        & span{
+            @include style-font ( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 14px ,$weight: 600 );
+        }
+    }   
+    & ul {
+        
+        @include align-flexcontainer ( $direc: column , $justCont: flex-start );
+        padding: 5px;
+        align-items: flex-start;
+        gap:5px;
+        width:100%;
+        & li{
             
-            display: inline-flex;
-            gap:25px; 
+            @include style-border ( $line:0.5px, $style:solid, $color-bord: rgb(161, 161, 161), $radius:5px );
+            @include align-flexcontainer ( $direc: row , $justCont: flex-start );
+            align-items: center;
+            width:70%;
+            padding: 5px;
+            gap:25px;
+            & img {
+                
+                padding:2px;
+                width:100px;
+            }
+            & p:first-of-type {  
+                
+                width:350px;
+                text-align: left; }
+
+ 
         }
            
     }
+    .resumeBuy{
+        align-self: flex-start;
+        @include align-flexcontainer ( $direc: row , $justCont: flex-end );
+        gap:20px;
+        padding: 8px;
+        border-top:4px double $gray-dark;
+        width:70%;
+
+        h4 {
+            font-size: medium;
+            font-weight: 600;
+        }
+        button {
+            all: unset;
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: $gray-dark;
+            color: #fff;
+            border-radius: 5px;
+            text-align: center;
+            font-family: inherit;
+          }
+    }
+
 
 }

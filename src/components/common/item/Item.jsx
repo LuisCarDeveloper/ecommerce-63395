@@ -5,6 +5,7 @@ import productsAdapter from "../../../adapters/productsAdapter";
 export default function Item ( { className, productList} ) {
   
     const adaptedProductList= productsAdapter(productList)
+    console.log(productList)
 
     return (
         <div className='containerFilter' >

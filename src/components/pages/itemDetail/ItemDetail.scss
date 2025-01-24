@@ -13,6 +13,17 @@
     flex-direction:column;
     justify-content: center;
     gap:15px;
+    button {
+        all: unset;
+        display: inline-block;
+        cursor: pointer;
+        padding: 10px 20px;
+        background-color: $gray-dark;
+        color: #fff;
+        border-radius: 5px;
+        text-align: center;
+        font-family: inherit;
+      }
 }
 .productTitle{
     @include style-font ( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 28px ,$weight: 600 );

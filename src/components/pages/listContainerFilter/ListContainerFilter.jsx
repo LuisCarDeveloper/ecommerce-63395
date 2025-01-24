@@ -15,13 +15,11 @@ export function ListContainerFilter(  ) {
   const filteredProductList = productList.filter(
       (product) => product.category === idCat)
 
-  const adaptedProductList = productsAdapter(filteredProductList)
-
   return (
     loading? <Loader/>:
     <div >
-      { adaptedProductList.length > 0 
-        ? <ListContainerFilterPresentation productList={adaptedProductList}/> 
+      { filteredProductList.length > 0 
+        ? <ListContainerFilterPresentation productList={filteredProductList}/> 
         : (<p>No se encontraron productos en esta categoría.</p>)
         
       }
