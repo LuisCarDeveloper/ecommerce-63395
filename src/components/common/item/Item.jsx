@@ -5,7 +5,6 @@ import productsAdapter from "../../../adapters/productsAdapter";
 export default function Item ( { className, productList} ) {
   
     const adaptedProductList= productsAdapter(productList)
-    console.log(productList)
 
     return (
         <div className='containerFilter' >
@@ -16,7 +15,7 @@ export default function Item ( { className, productList} ) {
                     <h5 className='productTitle'>{ product.category } - { product.trade } - { product.type } x { product.pack } { product.unity } { product.volumen } </h5>
                     <p className='productPrice'>Precio: { product.price }</p>
                     <p className='productPrice'>Precio Online: { product.priceOnline }</p>
-                    <img src={`/img/${product.id}.webp`} alt={product.id} />
+                    <img src={product.image} alt={product.id} />
                 </div>
                 </Link>)) 
             }

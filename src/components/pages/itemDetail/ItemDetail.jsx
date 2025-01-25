@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useContext,useState } from "react";
 import { CartContext } from "../../context/CartContext";
-import products from "../../../mocks/products";
 import useGetProduct from "../../../hook/useGetProduct";
 import productsAdapter from "../../../adapters/productsAdapter";
 import Loader from "../../common/loader/Loader";
@@ -13,15 +12,15 @@ import './ItemDetail.scss'
 
 export function ItemDetail({className='itemFilter'}) {
 
-  const { productList, error, loading} = useGetProduct( products )
+  const { productList, error, loading} = useGetProduct()
   const { idProduct } = useParams();
   const [showItemCount,  setShowItemCount] = useState (true)
   const { addProduct } = useContext(CartContext)
 
   const findedProduct = productList.filter(
-    (product) => product.id === idProduct
+    (product) => product.id.toLowerCase() === idProduct.toLowerCase()
   );
-
+ console.log(findedProduct)
   const adaptedProductList = productsAdapter( findedProduct ); 
 
   const addProductInCart =(count)=>{
@@ -52,7 +51,7 @@ export function ItemDetail({className='itemFilter'}) {
             </div>
 
             <div className='containerImageItem'>
-              <img src={`/img/${product.id}.webp`} alt={product.id} />
+              <img src={product.image} alt={product.id} />
             </div>
           </div>
           {showItemCount

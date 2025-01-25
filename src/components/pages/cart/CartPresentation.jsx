@@ -14,7 +14,7 @@ export default function CartPresentation (){
             <ul>
             {cart.map( (productCart)=> (
                 <li key={productCart.id}>
-                    <img src={`/img/${productCart.id}.webp`} alt={productCart.id} width={100}/>
+                    <img src={productCart.image} alt={productCart.id} width={100}/>
                     <p> { capitalFirstChar(productCart.category) }  { capitalFirstChar(productCart.trade) }  { capitalFirstChar(productCart.type) } x { productCart.pack }
                         { productCart.unity } - { productCart.volumen }</p>
 

@@ -40,7 +40,8 @@ export default function productsAdapter(productList=[]){
             obs: product.obs,
             price:`S/. ${parseFloat(product.priceReg).toFixed(2)}`,
             priceOnline:`S/. ${parseFloat(product.priceOnline).toFixed(2)}`,
-            stock:`${parseInt(product.stock)}`
+            stock:`${parseInt(product.stock)}`,
+            image: product.image
         }
     })
     return newProductList

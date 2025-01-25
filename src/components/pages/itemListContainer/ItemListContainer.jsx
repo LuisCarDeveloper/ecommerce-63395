@@ -1,12 +1,11 @@
 import ItemListContainerPresentation from './ItemListContainer.Presentation';
-import products from "../../../mocks/products";
 import useGetProduct from '../../../hook/useGetProduct';
 import Loader from '../../common/loader/Loader';
 import './ItemListContainer.scss'
 
 export default function ItemListContainer () {
 
-    const {productList, error, loading} = useGetProduct(products)
+    const {productList, error, loading} = useGetProduct()
     
     return (
           loading

@@ -10,6 +10,7 @@ import { ListContainerFilterPresentation } from "./ListContainerFilterPresentati
 export function ListContainerFilter(  ) {
 
   const{ productList, error, loading } = useGetProduct()
+
   const { idCat } = useParams()
 
   const filteredProductList = productList.filter(

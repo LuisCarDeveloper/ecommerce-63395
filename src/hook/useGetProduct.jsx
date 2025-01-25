@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getProductMock } from '../helpers/getProductMock';
-import products from '../mocks/products';
+import { getProduct } from '../helpers/getProduct';
 
 export default function useGetProduct () {
 
@@ -10,12 +9,12 @@ export default function useGetProduct () {
 
   useEffect( () => {
       setLoading( true )
-      getProductMock( products )
-      .then(()=>{setProductList( products )})
+      getProduct()
+      .then((products)=>{setProductList( products )})
       .catch( (error)=>{
         setError( error )})
       .finally( ()=> {setLoading( false )})
-    }, [products] )
+    }, [getProduct] )
 
     return { productList, error, loading }
       
