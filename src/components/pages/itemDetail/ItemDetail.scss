@@ -26,7 +26,7 @@
       }
 }
 .productTitle{
-    @include style-font ( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 28px ,$weight: 600 );
+    @include style-font ( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 18px ,$weight: 600 );
     width:100%;
     padding:20px;
     text-align:center;
@@ -43,7 +43,7 @@
     .infoItem{
 
         width:40%;
-        @include style-font ( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 20px ,$weight: 500 );
+        @include style-font ( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 18px ,$weight: 500 );
         text-align: left;
         display:flex;
         flex-direction: column;

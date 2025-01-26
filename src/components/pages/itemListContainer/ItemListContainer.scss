@@ -7,18 +7,19 @@
     margin:30px auto;
     padding: 40px;
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));   
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));   
     gap:40px;
 
 }
 
 .filteredProducts{
-    @include style-font( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 16px ,$weight: 300 );
+   
     @include style-border ( $line:0.5px, $style:solid, $color-bord: $white-dark, $radius:3px );
+    text-align: center;
     padding:5px;
     text-decoration: none;
     & > img{
-        width:100%;
+        width:80%;
         padding:15px 0;
     }
     .productPrice{

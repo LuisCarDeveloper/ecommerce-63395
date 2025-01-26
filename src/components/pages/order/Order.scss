@@ -1,0 +1,56 @@
+//Import folder Styles-Globals and assign alias.
+@use '../../../styles/' as *;
+@use '../../../styles/typography' as *;
+
+
+.successMessage{
+    @include style-font ( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 20px ,$weight: 500 );
+    padding: 20px;
+    span{
+        font-size: x-large;
+    }
+    
+}
+.containerOrder{
+    @include style-font ( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 12px ,$weight: 400 );
+    @include style-border ( $line:1px, $style:solid, $color-bord: $gray-dark, $radius:7px );
+    background-color: $white-dark;
+    margin:40px auto;
+    padding: 10px;
+    width: 40%;
+    h3{
+        color:$lime1-dark-background-grad;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+    }
+    button{    
+        all: unset;
+        display: inline-block;
+        cursor: pointer;
+        padding: 10px 20px;
+        background-color: $gray-dark;
+        color: #fff;
+        border-radius: 5px;
+        text-align: center;
+        font-family: inherit;
+    }
+
+    div {
+        span{
+            @include style-font ( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 12px ,$weight: 700 );
+        }
+        @include style-border ( $line:1px, $style:solid, $color-bord: $gray-dark, $radius:7px );
+        margin:20px auto;
+        padding: 10px;
+        width: 90%;
+        text-align: left;
+        h4{
+            text-align: center;
+            font-size: x-large;
+        }
+        li{
+            margin-bottom: 10px;
+        }
+
+    }
+}

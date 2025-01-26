@@ -1,8 +1,5 @@
 import { useParams } from "react-router-dom";
-
 import useGetProduct from "../../../hook/useGetProduct";
-import productsAdapter from "../../../adapters/productsAdapter";
-
 import Loader from "../../common/loader/Loader";
 import { ListContainerFilterPresentation } from "./ListContainerFilterPresentation";
 

@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import { capitalFirstChar } from "../../../adapters/productsAdapter";
 import { RiDeleteBin5Fill } from 'react-icons/ri'
+import { Link } from "react-router-dom";
 import './Cart.scss'
 
 
@@ -28,7 +29,8 @@ export default function CartPresentation (){
             </ul>
             <div className="resumeBuy">
                 <h4>Precio Total: S/. {totalPrice().toFixed(2)}</h4>
-                <button onClick = {deleteCart}>Vaciar Carrito</button>
+                <button className="buttonCart" onClick = {deleteCart}>Vaciar Carrito</button>
+                <Link className="buttonCart" to="/checkout" >Continuar mi compra</Link>
             </div>
 
         </div>

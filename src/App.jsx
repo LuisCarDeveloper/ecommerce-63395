@@ -6,7 +6,7 @@ import {ItemListContainer}  from './components/pages/itemListContainer';
 import { ListContainerFilter } from './components/pages/listContainerFilter/ListContainerFilter';
 import {ItemDetail} from './components/pages/itemDetail/ItemDetail';
 import Cart from './components/pages/cart/CartPresentation';
-import { CartContext } from './components/context/CartContext';
+import Checkout from './components/pages/checkout/Checkout';
 import { CartProvider } from './components/context/CartContext';
 
 import './App.scss';
@@ -23,6 +23,7 @@ export default function App() {
               <Route path = "/categories/:idCat" element = { <ListContainerFilter/> }/>
               <Route path = "/product/:idProduct" element = { <ItemDetail/> }/>
               <Route path = "/cart" element = { <Cart/> }/>
+              <Route path = "/checkout" element = { <Checkout/> }/>
               <Route path = "/*" element = { <h1>Pagina No Encontrada en construccion</h1> }/>
             </Route>
           </Routes>
