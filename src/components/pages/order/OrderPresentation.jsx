@@ -1,50 +1,8 @@
-import { getDoc,doc } from "firebase/firestore";
-import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
-import db from "../../../db/db";
+import formattDate from "../../../helpers/fomatDateFire";
 import './Order.scss'
 
-
-export default function OrderPresentation({orderID}){
-
-const [orderData, setOrderData]=useState({})
-
-useEffect(()=>{
-    const getOrderByID = async (orderID) => {
-        try{
-            console.log(orderID)
-            const ordersRef = doc(db,"orders", orderID)
-    
-            const docSnap = await getDoc(ordersRef);
-            if (docSnap.exists()) {
-                console.log("Documento encontrado:", docSnap.data());
-                setOrderData({ id: docSnap.id, ...docSnap.data() }) ; // Retorna el documento con su ID
-              } else {
-                console.log("No existe un documento con ese ID.");
-                return null;
-              }
-    
-        } catch (error){
-            console.log(error)
-        }
-    }
-
-getOrderByID(orderID)
-
-},[orderID])
-
-  // Formatear la fecha desde los valores de Firestore
-  const formattedDate = new Date(orderData.date?.seconds * 1000).toLocaleDateString("es-ES", {
-    day: "2-digit",
-    month: "long",
-    year: "numeric",
-    hour: "2-digit",    // Incluir la hora
-    minute: "2-digit",  // Incluir los minutos
-    hour12: false,      // Formato de 24 horas
-  });
-
-  
-
+export default function OrderPresentation({orderData}){
     return (
         <div>
             <h2 className="successMessage">Felicitaciones...!!! su compra con ID : <span>{orderData.id}</span> ha sido exitosa.</h2>
@@ -55,7 +13,7 @@ getOrderByID(orderID)
                     <h4>Datos Orden</h4>
                     <p>ID Orden: <span>{orderData.id}</span></p>
                     <p>Importe: S/. <span>{parseFloat(orderData.total).toFixed(2).toLocaleString("en-US")}</span></p>
-                    <p>Fecha y Hora : <span>{formattedDate}</span> </p>                    
+                    <p>Fecha y Hora : <span>{formattDate(orderData)}</span> </p>                    
                 </div>
                 <div>
                     <h4 className="buyerSection">Datos Comprador</h4>
@@ -76,10 +34,6 @@ getOrderByID(orderID)
                     </div>
                 <Link to="/"><button>Aceptar</button></Link>   
             </div>
-
-                
-
-
         </div>
     )
 }

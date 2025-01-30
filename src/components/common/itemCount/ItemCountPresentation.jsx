@@ -1,32 +1,22 @@
-import { useState } from "react";
+import CounterProducts from "./counterproducts/CounterProducts"
+import FinishAddProducts from "./finishAddProducts/FinishAddProducts"
 
-export default function ItemCountPresentation ( {stock, addProductInCart}){
 
-    const [ count, setCount ] = useState(1)
+export default function ItemCountPresentation ( { count, handleClickRemove, handleClickAdd,  openModal}){
+  const classCounterBttn = 'counterProducts'
+  const classAddCartBttn = 'finishAddProducts'
 
-    const handleClickRemove =()=>{
-        if (count > 1){
-            setCount((prevCount) => prevCount - 1)
-        }
-    }
-
-    const handleClickAdd=()=>{
-        if(count < stock){
-            setCount((prevCount) => prevCount + 1)
-        }
-
-    }
-    
-
-    return (
-        <div className='addProducts'>
-            <div className='counterProducts' >
-            <button onClick = {handleClickRemove}>-</button>
-            <div> {count} </div>
-            <button onClick = {handleClickAdd}>+</button>
-            </div>
-            <button onClick = {()=>addProductInCart(count)} ><span>Agregar Producto</span></button>
-        </div>
+  return (
+    <div className ='counterDetail'>
+      <CounterProducts className={classCounterBttn}
+        count={count} 
+        handleClickRemove={handleClickRemove} 
+        handleClickAdd={handleClickAdd}
+      />
+			<FinishAddProducts className = {classAddCartBttn}
+				openModal ={openModal}
+			/>       
+    </div>
     )
 
 }

@@ -1,21 +1,21 @@
 import { useEffect, useState } from 'react';
-import { getProduct } from '../helpers/getProduct';
+import { getCategories } from '../helpers/getCategories';
 
-export default function useGetProduct () {
+export default function useGetCategories () {
 
-  const [ productList, setProductList ] = useState( [] )
+  const [ categoryList, setCategoryList ] = useState([] )
   const [ error, setError] = useState()
   const [ loading, setLoading] = useState( true )
 
   useEffect( () => {
       setLoading( true )
-      getProduct()
-      .then((products)=>{setProductList( products )})
+      getCategories()
+      .then((categories)=>{setCategoryList( categories)})
       .catch( (error)=>{
         setError( error )})
       .finally( ()=> {setLoading( false )})
     }, [] )
 
-    return { productList, error, loading }
+    return { categoryList, error, loading }
       
   }

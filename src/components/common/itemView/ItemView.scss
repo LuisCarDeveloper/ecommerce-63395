@@ -1,0 +1,62 @@
+@use '../../../styles/' as *;
+@use '../../../styles/typography' as *;
+
+.containerItemView {
+	@include align-flexcontainer ( $direc: row , $justCont: center);
+    @include style-border ( $line:1px, $style:solid, $color-bord: $gray-dark, $radius:3px );
+	width:50%;
+	margin: 50px auto;
+	padding: 10px;
+	gap:10px;
+
+	img {
+      width:50%;
+			min-width: 300px;
+  }
+
+  .infoItem {
+		@include align-flexcontainer ( $direc: column , $justCont: center);
+		width:50%;	      
+		gap:10px;	
+
+		h5 {
+			@include align-flexcontainer ( $direc: row , $justCont: center);
+      @include style-font( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 24px ,$weight: 700 );
+		}
+		.secondInfo {
+			width: 80%;
+			@include align-flexcontainer ( $direc: row , $justCont:space-evenly);
+			
+			.priceItem {
+				@include style-font( $color: $fucsia-ligth, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 22px ,$weight: 600 );
+			}
+
+			.stockItem{
+				@include style-font( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 12px ,$weight: 400 );
+			}
+		}
+
+		.fourthInfo {
+			@include style-border ( $line:1px, $style:solid, $color-bord: $white-dark, $radius:3px );
+			@include style-font( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 11px ,$weight: 400 );
+			@include align-flexcontainer ( $direc: row , $justCont: center);
+			align-items: flex-start;
+			width: 85%;
+			padding:15px;
+			gap:30px; 
+
+			h6 {
+				font-size: 14px;
+				text-decoration: underline ;
+				text-underline-offset: 8px;
+				margin-bottom: 15px;
+			}
+
+			p {
+				text-align:justify ;
+			}
+		}
+
+  }
+
+}

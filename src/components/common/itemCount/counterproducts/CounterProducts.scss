@@ -17,18 +17,5 @@
         }
 
     }
-    .finishAddProducts{
-        padding: 10px;
-        @include align-flexcontainer ( $direc: row , $justCont:center);
-        gap: 20px;
-        .backStart{
-            @include style-font( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 12px ,$weight: 400 ); 
-            text-decoration: underline;
-            text-underline-offset: 4px
-        }
-        button{
-            @include style-button (  $color:$white-dark, $color-back:$lime-principal ); 
-        }
-    }
 
 }

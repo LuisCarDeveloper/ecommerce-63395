@@ -53,4 +53,19 @@
       box-shadow: $line $line #{2*$line} $line $color-bord
     };
 
+    //=========Mixin Styling Button  ===========
+
+   @mixin style-button (  $color:#fff, $color-back: $gray-dark ) {
+       all: unset;
+        display: inline-block;
+        cursor: pointer;
+        padding: 10px 20px;
+        background-color: $color-back;
+        color: #fff;
+        border-radius: 5px;
+        text-align: center;
+        font-family: inherit;
+    };
+   
+
 

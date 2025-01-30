@@ -1,0 +1,31 @@
+@use '../../../styles/' as *;
+@use '../../../styles/typography' as *;
+
+.containerFilter{
+    width:70%;
+    margin: 30px auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:30px;
+    
+    .filteredProducts {
+        @include style-border ( $line:1px, $style:solid, $color-bord: $white-dark, $radius:3px );
+        @include style-font( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 16px ,$weight: 400 );
+        padding:15px 0px;
+        p {
+            
+        }
+        img {
+            width:80%;
+            padding:15px 0;
+        }
+        h5 {
+            font-size: 23px;
+            font-weight: 600;
+            margin:5px;
+        }
+        .priceItem {
+            @include style-font( $color: $fucsia-ligth, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 20px ,$weight: 700 );
+        }
+    }
+}

@@ -1,9 +1,10 @@
 import { useState, useContext } from "react";
 import CheckoutPresentation from "./CheckoutPresentation";
-import { CartContext } from "../../context/CartContext";
+import { CartContext } from "../../../context/CartContext";
 import { Timestamp,collection, addDoc } from "firebase/firestore";
+import Loader from "../../common/loader/Loader";
 import db from "../../../db/db";
-import OrderPresentation from "../order/OrderPresentation";
+import Order from "../order/order";
 
 
 export default function Checkout(){
@@ -35,6 +36,7 @@ export default function Checkout(){
 
      const uploadOrder = async(newOrder) =>{
         try{
+
             const ordersRef = collection(db,'orders')
             const response = await addDoc(ordersRef, newOrder )
             setOrderId (response.id)
@@ -43,19 +45,15 @@ export default function Checkout(){
         }
      }
     return (
-        <div>{
-        orderID
-        ?(<OrderPresentation orderID={orderID} />) /*(<div>
-            <h3> Orden enviada correctamente guarde su código</h3>
-            <h4>{orderID}</h4>
-        </div>)*/
-        :(
-        <CheckoutPresentation
-            dataForm={dataForm}
-            handleChangeInput={handleChangeInput}
-            handleSubmit={handleSubmit}
-        />)}
         
+        <div> {
+        orderID
+           ? ( <Order orderID={orderID} /> ) 
+            :   ( <CheckoutPresentation
+                dataForm={dataForm}
+                handleChangeInput={handleChangeInput}
+                handleSubmit={handleSubmit} /> )
+        }        
         </div>
 
     )

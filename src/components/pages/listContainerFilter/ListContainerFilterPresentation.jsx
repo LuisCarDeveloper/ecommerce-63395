@@ -1,10 +1,9 @@
-import Item from "../../common/item/item"
+import ItemGeneric from '../../common/itemGeneric/ItemGeneric'
 
-export function ListContainerFilterPresentation( {productList} ) {
-
+export function ListContainerFilterPresentation( {filteredProductList} ) {
    return (
     <div >
-        <Item productList={productList}/>
+        <ItemGeneric productList={filteredProductList}/>
     </div>
   );
 }

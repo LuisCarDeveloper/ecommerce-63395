@@ -2,64 +2,9 @@
 @use '../../../styles/' as *;
 @use '../../../styles/typography' as *;
 
-
-.containerItem{
-    @include style-border( $line:1px, $style:solid, $color-bord: $gray-dark, $radius:5px );
-    margin:60px auto;
-    padding:20px;
-    max-width:50%;
-    min-width:600px;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    gap:15px;
-    button {
-        all: unset;
-        display: inline-block;
-        cursor: pointer;
-        padding: 10px 20px;
-        background-color: $gray-dark;
-        color: #fff;
-        border-radius: 5px;
-        text-align: center;
-        font-family: inherit;
-      }
-}
-.productTitle{
-    @include style-font ( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 18px ,$weight: 600 );
-    width:100%;
-    padding:20px;
-    text-align:center;
+.itemFilter{
 
 }
-
-.containerInfo{
-
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap:15px;
-
-    .infoItem{
-
-        width:40%;
-        @include style-font ( $color: $gray-dark, $font: 'Poppins', $fallback: 'Arial, sans-serif', $size: 18px ,$weight: 500 );
-        text-align: left;
-        display:flex;
-        flex-direction: column;
-        align-items:flex-start;
-
-    }
-    .containerImageItem{
-           width:60%;
-        & > img{
-            width:70%;
-        }
-    }
-    
-}
-
-
 
 
 

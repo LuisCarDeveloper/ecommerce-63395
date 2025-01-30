@@ -1,17 +1,25 @@
-import { Categories } from "../../../data/data";
 import { NavLink } from "react-router-dom";
+import { capitalFirstChar } from "../../../adapters/productsAdapter";
 
-import { capitalizeFirstLetter } from "../../../helpers/capitalizeWord";
+//=== Data - Categories Products=====
 
-export default function CategoriesPresentation ( { className } ) {
+const Categories = [
+  {idCat:'C001', descriptionCat:'cerveza', ref:'Beer' },
+  {idCat:'C002', descriptionCat:'vino', ref:'Wine' },
+  {idCat:'C003', descriptionCat:'pisco', ref:'Pisco' },
+  {idCat:'C004', descriptionCat:'whiskie', ref:'Whisky' },
+  {idCat:'C005', descriptionCat:'ron', ref:'Ron' },
+];
+
+export default function CategoriesPresentation ( { categoryList, className } ) {
   
     return (
       <div className = { className }>
         <ul>
-          { Categories.map ( (category , index) => { 
+          { categoryList.map ( (category , index) => { 
             return(                        
               <li key = {index}>
-                <NavLink to =  { `/categories/${ category.descriptionCat}` } > { capitalizeFirstLetter(category.descriptionCat) }&nbsp;| </NavLink>
+                <NavLink to =  { `/categories/${ category.descriptionCat}` } > { capitalFirstChar(category.descriptionCat) }&nbsp;| </NavLink>
               </li> )             
             })}
           </ul>
